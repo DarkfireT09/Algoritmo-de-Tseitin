@@ -107,8 +107,21 @@ def Tseitin(A, letrasProposicionalesA):
 # Output: L (lista), lista de literales
 # Se asume que cada literal es un solo caracter
 def Clausula(C):
+    
+    L=[] #lista de literales 
+    
+    while(len(C) > 0):
+        
+        s = C[0]
+        if s == '-':
+            L.append(s+C[1])
+            C=C[3:]
+        else:
+            L.append(s)
+            C=C[2:]
+            
+    return L
 
-    #  IMPLEMENTAR AQUI ALGORITMO CLAUSULA
     pass
 
 # Algoritmo para obtencion de forma clausal
