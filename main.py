@@ -8,10 +8,13 @@
 import FNC as fn
 letrasProposicionalesA = ['p', 'q', 'r', 's', 't']
 # # Formula a la cual encontrar su forma clausal
-# formula = "-p"
-# formula = "(pYq)"
-# formula = "(pOq)"
-formula = "(pYq)"
+formula = "(((pY-q)Y-r)O((-pYq)Y-r))"
+#formula = "-(-p>(rO-q))"
+#formula = "((p>-q)>r)"
+#formula = "(((-pOq)O(p>-q))>-((q>(rY(sO-t)))>-p))"
+#formula = "(((p>(rY(sO-t)))>-q)>-((-pOq)O(p>-q)))"
+#formula = "(((-pOq)O(p>-q))>-((p>(rY(sO-t)))>-q))"
+#formula = "((p>(rY(sO-t)))>-q)"
 
 # Aplicando el algoritmo de Tseitin a formula
 # Se obtiene una cada que representa la formula en FNC

@@ -52,6 +52,7 @@ def enFNC(A):
 
 def Tseitin(A, letrasProposicionalesA):
     letrasProposicionalesB = [chr(x) for x in range(97, 110)]
+    letrasProposicionales = letrasProposicionalesA + letrasProposicionalesB
     assert(not bool(set(letrasProposicionalesA) & set(letrasProposicionalesB))), u"¡Hay letras proposicionales en común!"
 
     L = [] #Donde guardare las conjunciones
@@ -60,7 +61,7 @@ def Tseitin(A, letrasProposicionalesA):
     s = A[0] # Inicializacion sımbolo de trabajo
     
     while (len(A) > 0):
-        if s in letrasProposicionalesA and Pila[-1] =='-':
+        if s in letrasProposicionales and len(Pila)>0 and Pila[-1] =='-':
             i += 1
             Atomo = letrasProposicionalesB[i]
             Pila = Pila[:-1]
