@@ -11,7 +11,7 @@ letrasProposicionalesA = ['p', 'q', 'r', 's', 't']
 # formula = "-p"
 # formula = "(pYq)"
 # formula = "(pOq)"
-formula = "(p>q)"
+formula = "(pYq)"
 
 # Aplicando el algoritmo de Tseitin a formula
 # Se obtiene una cada que representa la formula en FNC
