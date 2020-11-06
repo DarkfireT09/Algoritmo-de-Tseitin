@@ -91,6 +91,7 @@ def Tseitin(A, letrasProposicionalesA):
     else:
         Atomo = letrasProposicionalesB[i]
     for x in L:
+        print(x)
         y = enFNC(x)
         B += "Y" + y
 

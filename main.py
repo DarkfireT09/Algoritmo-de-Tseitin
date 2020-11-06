@@ -8,8 +8,8 @@
 import FNC as fn
 letrasProposicionalesA = ['p', 'q', 'r', 's', 't']
 # # Formula a la cual encontrar su forma clausal
-formula = "(((pY-q)Y-r)O((-pYq)Y-r))"
-#formula = "-(-p>(rO-q))"
+#formula = "(((pY-q)Y-r)O((-pYq)Y-r))"
+formula = "-(-p>(rO-q))"
 #formula = "((p>-q)>r)"
 #formula = "(((-pOq)O(p>-q))>-((q>(rY(sO-t)))>-p))"
 #formula = "(((p>(rY(sO-t)))>-q)>-((-pOq)O(p>-q)))"
